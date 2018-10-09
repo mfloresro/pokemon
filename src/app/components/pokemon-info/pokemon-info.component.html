@@ -1,0 +1,23 @@
+<div class="page-header">
+  <h1>{{pokemon[0].nombre}}  </h1>
+  <div>
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" [routerLink]="['/pokemones']">&laquo; Volver</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div Class="col-md-3" >
+    <div class="card border-secondary mb-3" style="max-width: 20rem;">
+        <div class="card-body">
+            <img class="img-responsive" src="../../../assets/img/{{pokemon[0].imagen}}">
+        </div>
+        <div class="card-header white-color text-center">{{pokemon[0].nombre}}</div>
+      </div>
+  </div>
+  <div class="col-md-9">
+    <p>{{pokemon[0].bio}}</p>
+  </div>
+</div>

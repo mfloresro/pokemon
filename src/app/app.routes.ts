@@ -11,4 +11,4 @@ const routes: Routes=[
     {path:'**', redirectTo:"home"}
 ];
 
-export const POKE_ROUTING = RouterModule.forRoot(routes);
+export const POKE_ROUTING = RouterModule.forRoot(routes, {useHash: true});
